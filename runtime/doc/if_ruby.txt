@@ -7,7 +7,7 @@ The Ruby Interface to Vim				*if_ruby* *ruby* *Ruby*
 
 			*E266* *E267* *E268* *E269* *E270* *E271* *E272* *E273*
 
-The home page for ruby is http://www.ruby-lang.org/.  You can find links for
+The home page for ruby is https://www.ruby-lang.org/.  You can find links for
 downloading Ruby there.
 
                                       Type |gO| to see the table of contents.
@@ -19,15 +19,15 @@ downloading Ruby there.
 :rub[y] {cmd}		Execute Ruby command {cmd}.  A command to try it out: >
 				:ruby print "Hello"
 
-:rub[y] << [endmarker]
+:rub[y] << [trim] [{endmarker}]
 {script}
 {endmarker}
 			Execute Ruby script {script}.
-			The {endmarker} after {script} must NOT be preceded by
-			any white space.
 
 			If [endmarker] is omitted, it defaults to a dot '.'
-			like for the |:append| and |:insert| commands.
+			like for the |:append| and |:insert| commands.  Refer
+			to |:let-heredoc| for more information.
+
 
 			This form of the |:ruby| command is mainly useful for
 			including ruby code in vim scripts.
